@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.container .storage {
+  flex-basis: 50%;
+}
+
+.container .bookForm {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .bookForm input, .container .bookForm select, .container .bookForm button {
+  padding: 5px;
+  margin: 5px;
+  width: 50%;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvX21haW4uc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLFVBQVU7RUFDVixTQUFTO0FDQ1g7O0FERUE7RUFDRSxXQUFXO0VBQ1gsWUFBWTtFQUNaLGFBQWE7RUFDYixpQkFBaUI7QUNDbkI7O0FETEE7RUFPSSxlQUFlO0FDRW5COztBRFRBO0VBV0ksZUFBZTtFQUNmLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsbUJBQW1CO0FDRXZCOztBRGhCQTtFQWlCTSxZQUFZO0VBQ1osV0FBVztFQUNYLFVBQVU7QUNHaEIiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
