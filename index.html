@@ -10,20 +10,26 @@
 <body>
   <div class="container">
     <div class="storage">
+      <table>
+        <tbody class="booksTable">
+          <tr><td>Title</td><td>Autor</td><td>Priority</td><td>Type</td></tr>
+        </tbody>
+    </table>
     </div>
     <div class="bookForm">
       <form>
         <input type="text" name="title" placeholder="title" required minlength="1">
         <input type="text" name="autor" placeholder="autor" required minlength="3">
         <input type="number" name="priority" placeholder="priority" min="1" max="5" required>
-        <select name="select">
+        <select name="select" value="fantasy">
           <option>Fantasy</option>
           <option>Sci-fi</option>
           <option>Horror</option>
         </select>
-        <button type="submit">Add to storage</button>
+        <button class="addBtn" type="submit">Submit</button>
       </form>
     </div>
   </div>
+  <script src="js/script.js" type="module"></script>
 </body>
 </html>

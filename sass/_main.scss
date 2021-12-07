@@ -11,6 +11,20 @@
 
   .storage {
     flex-basis: 50%;
+
+    table {
+      width: 100%;
+
+      .booksTable {
+        width: 100%;
+        background-color: lightgray;
+  
+        td{
+          border: 1px solid black;
+          text-align: center;
+        }
+      }
+    }
   }
 
   .bookForm {
