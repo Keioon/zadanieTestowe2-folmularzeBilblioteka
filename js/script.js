@@ -57,13 +57,15 @@ const appStart = () => {
       booksTab.appendChild(tr);
     };
 
+
     if(list.length > 1) {
       list.forEach(elem => {
         elemCreate(elem);
       });
-    } else {
+    } else if(li.length != 0) {
+      console.log(li);
       elemCreate(li);
-    }
+    } 
   };
 
   addBook();
