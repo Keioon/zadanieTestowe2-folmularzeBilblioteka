@@ -22,7 +22,7 @@ const appStart = () => {
       book.autor = bookElem.querySelector('input[ name="autor"]').value;
       book.priority = bookElem.querySelector('input[ name="priority"]').value;
       book.type = bookElem.querySelector('select').value;
-      if(book.title.length < 1 || book.autor.length < 3 || book.priority < 0 || book.priority > 5) {
+      if(book.title.length < 1 || book.autor.length < 3 || book.priority < 1 || book.priority > 5) {
         window.alert('You dont gived title or autor or priority');
       } else {
         booksList.push(book);
