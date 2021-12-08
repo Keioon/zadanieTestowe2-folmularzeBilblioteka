@@ -60,14 +60,11 @@ const appStart = () => {
 
     if(list.length > 1) {
       list.forEach(elem => {
-        console.log(elem);
         elemCreate(elem);
       });
     } else if(li.length == 1) {
-      console.log(li[0]);
       elemCreate(li[0]);
     } else if(li != '') {
-      console.log(li);
       elemCreate(li);
     } 
   };
