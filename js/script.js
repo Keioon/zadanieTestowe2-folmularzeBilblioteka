@@ -22,7 +22,7 @@ const appStart = () => {
       book.autor = bookElem.querySelector('input[ name="autor"]').value;
       book.priority = bookElem.querySelector('input[ name="priority"]').value;
       book.type = bookElem.querySelector('select').value;
-      if(book.title.length < 1 || book.autor.length < 3 || book.priority == '') {
+      if(book.title.length < 1 || book.autor.length < 3 || book.priority < 0 || book.priority > 5) {
         window.alert('You dont gived title or autor or priority');
       } else {
         booksList.push(book);
@@ -60,9 +60,13 @@ const appStart = () => {
 
     if(list.length > 1) {
       list.forEach(elem => {
+        console.log(elem);
         elemCreate(elem);
       });
-    } else if(li.length != 0) {
+    } else if(li.length == 1) {
+      console.log(li[0]);
+      elemCreate(li[0]);
+    } else if(li != '') {
       console.log(li);
       elemCreate(li);
     } 

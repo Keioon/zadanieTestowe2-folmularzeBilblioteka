@@ -15,6 +15,15 @@
     table {
       width: 100%;
 
+      thead {
+        text-align: center;
+        background-color: lightgray;
+        
+        td {
+          border: 2px solid black;
+        }
+      }
+
       .booksTable {
         width: 100%;
         background-color: lightgray;
